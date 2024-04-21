@@ -1,22 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Shopping from '../components/Shopping.astro';
-const buyList: string[]= [
-	'Controller',
-	'Bread',
-	'Water',
-	'Notebook',
-	'Math Book',
-	'Choco Bar',
-	'Milk'
-]
+import Card from '../components/Card.astro';
+const URL_RANDOM_AVATAR = 'https://api.minimalavatars.com/avatar/random/png'
 ---
 
 <Layout title="Welcome to Astro.">
 	<h1>hola mundo</h1>
-	<Shopping 
-		list={buyList}
+	<Card
+		title='Random image'
+		body = 'Descripcion:'
+		href = {URL_RANDOM_AVATAR}
+	
 	/>
+	
 </Layout>
 
 <style>
