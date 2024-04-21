@@ -1,0 +1,13 @@
+---
+interface Props {
+    list: string[];
+  }
+const { list} = Astro.props;
+---
+<div>
+    <h1>Compras de la semana:</h1>
+    {list.map((item) => (
+        <li >{item}</li>
+      ))}
+</div>
+ 
